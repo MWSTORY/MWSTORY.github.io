@@ -95,7 +95,7 @@ legend {*width:0;}
 .quick_menu .on .menu_rc { background: url(../images/qbtn_on.png) no-repeat left top; width:18px;}
 .quick_menu .on .menu_sm { background: url(../images/qbtn_on.png) no-repeat left top; width:18px;}
 
-.main_con {width:100%; padding:0; text-align:center;} 
+.main_con {width:100%; padding:0; text-align:center;}
 /*printguard*/
 .pg_main {width:100%; min-width:980px; min-height:550px; padding:0; margin-top:18px; background:#fff3d2;}
 .pg_main .pg_con {width:980px; height:550px; margin:0 auto; text-align:left; color:#000000; background:url(../images/printguard_img.png) top right no-repeat;}
@@ -220,7 +220,7 @@ p.pr_con_img {padding-top:50px; text-align:center;}
 .pr_app dt {font-size:22px; font-family:Arial; color:#555;}
 .pr_app dd {padding-top:10px; font-size:13px; color:#666;}
 
-dl.sub3_text {width:510px; padding-top:10px; float:left;}  
+dl.sub3_text {width:510px; padding-top:10px; float:left;}
 .sub3_text dt {height:18px; text-align:left; margin:0; font-size:14px; color:#666; font-weight:bold;}
 .sub3_text dt img {padding-right:5px;}
 .sub3_text dd {font-size:13px; color:#666; line-height:20px;}
@@ -247,7 +247,7 @@ table.normal td.cmtName	{ border:0; text-align:left; font-weight:Bold; color:#64
 table.normal td.cmtDate	{ border:0; text-align:right; font:Normal 11px Tahoma; color:#888a88; }
 table.normal td.cmtContent	{ border:0; text-align:left; border-bottom:1px solid #C9CBC9; }
 
-table.type1			{ width:780px; margin-top:20px; }
+table.type1			{ width:790px; margin-top:20px; }
 table.type1.top		{ border-top:1px solid #C9CBC9; }
 table.type1 th			{ background:#efefef; font-size:12px; font-weight:Bold; color:#666; text-align:center; padding:6px 0; border-left:1px solid #D9DBD9; border-bottom:1px solid #D9DBD9; }
 table.type1 td			{ padding:5px 7px; border-left:1px solid #D9DBD9; border-bottom:1px solid #D9DBD9; font-size:12px; color:#555; text-align:center; }
@@ -267,7 +267,7 @@ table.type1 td.term	{ font:Normal 9px Verdana; }
 	.boardList td.cmt			{ font:Bold 10px Verdana; color:#E27737; padding-bottom:8px; }
 	.boardList td.subject a:hover	{ color:#95c3e5; }
 	.boardList td.write			{ border:0; text-align:center; padding-bottom:10px; }
-	.boardList td.write textarea { width:693px; height:300px; resize:none; }		
+	.boardList td.write textarea { width:693px; height:300px; resize:none; }
 
 .boardList2				{ width:780px; margin-top:10px;}
 	.boardList2 th				{ font-size:13px; font-weight:Bold; color:#0081d7; text-align:center; padding:7px 0; border-bottom:1px solid #D9DBD9; background:#f5f7fa; }
