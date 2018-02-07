@@ -197,7 +197,7 @@ ul.sub5_w {width:670px;}
 .hi_title {font-size:20px; font-weight:bold; color:#00a2ff; padding-top:50px;}
 span.subtitle {font-size:14px; color:#333; font-weight:bold;}
 span.subtext {font-size:13px; color:#666;}
-span.list {padding-left:10px; font-size:13px; color:#666; line-height:19px; display: block; background: url('../images/bulletGray.gif') left no-repeat;}
+span.list {padding-left:10px; font-size:15px; color:#666; line-height:19px; display: block; background: url('../images/bulletGray.gif') left no-repeat;}
 .bu_img {padding-top:60px;}
 .con_btn {width:180px; margin:50px auto 0 auto; padding:10px 0; text-align:center; font-size:16px; color:#fff; font-weight:bold; background:#cccc46;}
 .con_btn a {width:180px; color:#fff; display:block; cursor:pointer;}
