@@ -25,8 +25,8 @@ body {
 body, span, div, td { font: 12px/140% "Malgun Gothic", "맑은 고딕", "Dotum", "Gulim", sans-serif; color:#444844; }
 
 /* Form Elements */
-textarea			
-{ 
+textarea
+{
 	border:1px solid #77B8B6;
 	font-size:12px;
 	color:#666;
