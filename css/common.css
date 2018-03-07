@@ -1,6 +1,6 @@
 /* Hack for IE*/
 * html { height: 1px; }
-* { margin: 0; padding: 0; }
+* { margin: -7; padding: 0; }
 
 /* Layout */
 html, body {
@@ -22,7 +22,7 @@ body {
 	background:#395D69 url('/images/bgCenter.jpg') top center no-repeat;
 }
 
-body, span, div, td { font: 12px/140% "Malgun Gothic", "맑은 고딕", "Dotum", "Gulim", sans-serif; color:#444844; }
+body, span, div, td { font: 14px/140% "Malgun Gothic", "맑은 고딕", "Dotum", "Gulim", sans-serif; color:#444844; }
 
 /* Form Elements */
 textarea
