@@ -1,81 +1,164 @@
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
-
+<!DOCTYPE html>
+<html lang="ko">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta http-equiv="Content-Script-Type" content="text/javscript" />
-	<meta http-equiv="Content-Style-Type" content="text/css" />
-	<meta name="ROBOTS" content="INDEX, NOFOLLOW" />
-	<meta property="og:title" content="(주)엠더블유스토리" />
-	<meta property="og:description" content="기업보안소프트웨어,출력물보안,모바일APP개발,웨어러블서비스개발" />
-	<meta property="og:url" content="http://www.mwstory.com" />
-	<meta property="og:image" content="http://www.mwstory.com/images/mw_logo2.jpg" />
-	<meta http-equiv="IMAGETOOLBAR" content="NO" />
-	<title>::: MWSTORY - Make your wonderful story :::</title>
-	<link rel="stylesheet" type="text/css" href="css/main.css" />
-	<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <meta charset="UTF-8" http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>printguard</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href = "https : //fonts.googleapis.com/css2? family = Roboto : wght @ 100 & display = swap "rel ="stylesheet ">
 </head>
 
-<body>
-	<div id="wrap">
-		<div class="head" id="header">
+<script type="text/javascript">
 
-	  <div class="logo_box">
-		<!--<a href="#"><img src="images/mw_logo1.jpg" alt="mwstory" /></a>-->
-		<h1  style="margin-bottom:-25px;"><a href="/index.html">
-			  <img src="/images/mw_logo2.jpg" alt="mwstory" width="250" height="50"/></a></h1>
-		<h4>
-			  <a href="/index.html" >Home</a>
-			  <a href="/intro/sub1_1.html"  style="margin-left:25px">About Us</a>
-			  <a href="/solutions/sub2_1.html" style="margin-left:25px">Solutions</a>
-			  <a href="/employ/sub3_1.html" style="margin-left:25px">Recruit</a>
-			  <a href="#" onclick="window.open('http://blog.naver.com/mwstory1111');return false" style="margin-left:25px">Blog</a> </h4>
-	</div>
-	<div class="c_conta"> </div>
-	</div>
+function isMobile(){
 
-		<div class="main_con">
-			<div class="pg_main" id="tprintguard">
-				<div class="pg_con">
-					<p class="pg_text1">Print Security Solution</p>
-					<p class="pg_title">PRINTGUARD</p>
-					<p class="pg_text2">모든 오피스 환경에 적용 가능한 강력한 출력물 보안 서비스</p>
-					<div class="pg_btn">
-						<a href="solutions/sub2_pg_id.html"><button type="button" name="btn_more">MORE</button></a>
-					</div>
-				</div>
-			</div>
-		</div>
+var UserAgent = navigator.userAgent;
 
-		<div class="logo_bo">
-			<h5>
-				<img src="images/con_3.png" alt="mwstory" width="350" height="200"  /></a>
-				<img src="images/con_1.png" alt="mwstory" width="350" height="200" style="margin-left:50px"/></a>
-				<!--<img src="images/con_2.png" alt="mwstory" width="350" height="200" style="margin-left:50px" /></a>-->
-			</h5>
-		</div>
 
-		<div class="logo_bo">
-			<a href="solutions/sub2_rc_id.html"><img src="images/con_bn3.png" style="float:center" width="350" height="110" onmouseover="this.src='images/con_bn_cl3.png'" onmouseout="this.src='images/con_bn3.png'" border="0"> </a>
-			<!--<a href="solutions/sub2_rc_id.html"><img src="images/con_bn3.png" style="margin-left:50px" width="350" height="110" onmouseover="this.src='images/con_bn_cl3.png'" onmouseout="this.src='images/con_bn3.png'" border="0"> </a>-->
-			<a href="solutions/sub2_fo_id.html"><img src="images/con_bn1.png" style="margin-left:50px" width="350" height="110"  onmouseover="this.src='images/con_bn_cl1.png'" onmouseout="this.src='images/con_bn1.png'" border="0"> </a>
-			<!--<a href="solutions/sub2_mfpi_id.html"><img src="images/con_bn2.png" style="margin-left:50px" width="350" height="110" onmouseover="this.src='images/con_bn_cl2.png'" onmouseout="this.src='images/con_bn2.png'" border="0"> </a>-->
-		</div>
 
-		<div class="logo_bo"></div>
+if (UserAgent.match(/iPhone|iPod|Android|Windows CE|BlackBerry|Symbian|Windows Phone|webOS|Opera Mini|Opera Mobi|POLARIS|IEMobile|lgtelecom|nokia|SonyEricsson/i) != null || UserAgent.match(/LG|SAMSUNG|Samsung/) != null)
 
-	</div>
-	<div data-include="footer"></div>
+{
+
+return true;
+
+}else{
+
+return false;
+
+}
+
+}
+
+
+
+if(isMobile()){
+
+location.href = "m_index.html"; //모바일페이지
+
+}
+    //else{
+
+//location.href = "index.html"; //PC용 페이지
+
+//}
+
+</script>
+<body><!--헤더시작-->
+    <header>
+        <!--gnb-->
+        <div class="gnb clear-fix wrap">
+           <a class="logo" href="index.html"><img src="image/logo.png"></a>
+           <ul class="clear-fix">
+               <li><a href="sub1.html">회사소개</a></li>
+               <li><a href="sub2.html">제품소개</a></li>
+               <li><a href="#" class="open">상담신청</a></li>
+               <li><a href="https://blog.naver.com/mwstory1111" target="_blank">블로그</a></li>
+               <li><a href="http://officeguard.net" target="_blank">스마트스토어</a></li>
+           </ul>
+        </div>
+        
+        <!--banner-->
+           <ul class="banner wrap clear-fix">
+              <li>
+                   <img src="image/main_top.png" alt="프린트가드 보안 자물쇠 캐릭터">
+               </li>
+               <li>
+                   <img src="image/main_top_logo.png" alt="">
+                   <h2>강력한 출력물 보안 솔루션</h2>
+                   <h5>모든 오피스 환경에 적용가능한 강력한 출력 보안 서비스</h5>
+                   <a class="btn_hover open">
+                        <button>
+                            <img src="/image/icon01.png" alt="헤드셋 상담">
+                            <span>상담신청하기</span>
+                        </button>
+                   </a>
+                   <a class="btn_hover" href="sub2.html">
+                        <button>
+                            <img src="/image/icon02.png" alt="infomation">
+                            <span>제품상세보기</span>
+                        </button>
+                   </a>
+               </li>
+               
+           </ul>
+
+    </header>
+
+    
+    <!--본문-->     
+    <div class="index">
+        <div class="index_02 wrap clear-fix">
+            <ul>
+                <li><img src="image/main_printer.png" alt=""></li>
+            </ul>
+            <ul>
+                <li><h1>이런 분들께 추천드립니다 !!</h1></li>
+                <li><h5>회사 내에서 인쇄한 모든 출력물을 한 눈에 확인하고 싶다 !</h5></li>
+                <li><h5>회사 내에 어떤 컴퓨터에서 어떤 인쇄물을 출력했는지 알고 싶다 !</h5></li>
+                <li><h5>회사 부서별 또는 개인별로 인쇄물 출력에 관해 다른 권한을 부여하고 싶다 !</h5></li>
+                <li><h5>회사 문서외에 사적/개인적 인쇄물 출력을 통제하고 싶다 !</h5></li>
+                <li><h5>회사 출력물에  자동으로 인쇄물 정보 및 회사 워터마크 등을 삽입하고 싶다 !</h5></li>
+            </ul>
+        </div>
+    </div>
+     
+    <div class="index_03 wrap">
+        <h1>프로그램 설치 하나로 사내에 있는<br>모든 컴퓨터 출력시스템을 관리 할 수 있습니다 !</h1>
+        <h5>특정출력물 제한, 워터마크 및 사용자 정보삽입, 출력물 자동저장,<br>프린터 사용내역 조회 등 다양한 기능을 관리자 권한으로 부여할 수 있습니다.</h5>
+        <img src="/image/main_banner_01.png" alt="관리자 컴퓨터에서 사용자A,B,C,D,E,F 에게 각자 권한을 부여하는 그림">
+    </div>
+     
+    <div class="index_04">
+        <div class="wrap">
+            <h4 class="white">그밖에 다양한 기능들을 별도의 추가 비용 없이<br>사용하실 수 있습니다.</h4>
+            <a class="btn_hover open">
+                <button>
+                    <img src="/image/icon01_1.png" alt="헤드셋 상담">
+                    <span>상담신청하기</span>
+                </button>
+            </a>
+            <a class="btn_hover" href="sub2.html">
+                <button>
+                    <img src="/image/icon02_1.png" alt="infomation">
+                    <span>제품상세보기</span>
+                </button>
+            </a>
+        </div>
+    </div>
+    <div id="modal_content_back" class="display_on"></div>
+        <div id="modal_content" class="display_on">
+            <img src="/image/close.png" alt="X" id="m_close">
+            <p>프린트가드 상품의 가격 및 제품 상세정보 안내를 원하시는경우<br>
+            하단 정보를 입력하신 후 [상담신청하기]를 누르시면 신청이 완료됩니다.<br>
+            상담은 순차적으로 진행됩니다. 감사합니다.</p>
+            <label>업체명</label><input type="text"><br>
+            <label>담당자</label><input type="text"><br>
+            <label>이메일</label><input type="text"><br>
+            <label>연락처</label><input type="text"><br>
+
+            <input class="submit" type="submit" value="상담신청하기">
+        </div>
+   
+    
+    <footer>
+    <p>(주)엠더블유스토리 ㅣ 우 02841 서울시 성북구 안암로 145, 산학관 203-3호 (안암동 5가, 고려대학교 자연계캠퍼스) <br>
+    ㅣ 사업자등록번호 209-81-41489 ㅣ 통신판매업 2005-00592 ㅣ security@mwstory.com <br>
+    Copyright 2021. MWstory All rights reserved.</p>
+    </footer> 
 </body>
 <script>
-	$(function() {
-		var includes = $('[data-include]');
-		jQuery.each(includes, function() {
-			var file = '/subView/' + $(this).data('include') + '.html';
-			$(this).load(file);
+    $(document).ready(function(){
+			$(".open").click(function(){
+				$("#modal_content").removeClass('display_on');
+                $("#modal_content_back").removeClass('display_on');
+			});
+			$("#m_close").click(function(){
+				$("#modal_content").addClass('display_on');
+                $("#modal_content_back").addClass('display_on');
+			});
 		});
-	});
 </script>
-
 </html>

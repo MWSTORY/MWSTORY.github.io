@@ -1,4 +1,92 @@
-/* cleansite css - basic */
+@charset "utf-8";
 
-@import url(./common.css);
-@import url(./main.css);
+/*all*/
+*, body, ul, li, a, button, h1, h2, h3, h4, h5, p{margin: 0;padding: 0; list-style-type: none; font-style: none; text-decoration: none;border-style: none; font-weight: normal; font-family: Roboto, Arial, sans-serif;}
+.clear-fix::after{content:""; clear: both; display:block;}
+.wrap{width: 1060px; margin: 0 auto;}
+
+/*font*/
+h1{font-size:30px; color:#aac90c; font-weight: bold; letter-spacing: -0.05em;}
+h2{font-size:30px; color:#8f8f8f; font-weight: bold; letter-spacing: -0.05em;}
+h3{font-size:25px; color:#000000; font-weight: bold; letter-spacing: -0.05em;}
+h4{font-size:30px; color:#ffffff; font-weight: bold; letter-spacing: -0.05em;}
+h5{font-size:20px; color:#8f8f8f; letter-spacing: -0.05em;}
+
+/*header*/
+.gnb{height: 70px;}
+.gnb a img{margin-top: 34px;}
+.gnb ul{float: right;margin-top: 38px;}
+.gnb ul li{float: left; margin-left: 30px; color:#939393;}
+.gnb ul li a{color:#939393; font-size: 16px;}
+
+/*footer*/
+footer{font-size:15px; color: #aaa; text-align: center; padding: 80px 0 30px;}
+
+.banner{margin-bottom: 100px;}
+.banner li{float: left; margin:72px 0 0 150px;}
+.banner li:nth-child(2){margin:100px 0 0 40px;}
+.banner li h2{margin: 10px 0 3px; }
+.banner li h5{margin: 0 0 15px 0; }
+.banner li button{width: 190px; height:47px; border-radius: 22px; background: #aac90c; text-align: left; position: relative; margin-right: 5px}
+.banner li button img{margin: 5px;}
+.banner li button span{font-size:24px; color:#fff; font-weight:bold; padding: 0 0 20px 0; position: absolute; top:10px}
+
+.index{background: #f6fae5;}
+.index_02{padding: 80px 0;}
+.index_02 ul{float: left;}
+.index_02 ul img{padding: 20px 30px 0 120px;}
+.index_02 ul li h5{margin: 3px 0}
+
+.index_03{margin-top: 100px; padding-left: 150px;}
+.index_03 img{margin: 70px 0;}
+
+.index_04{background-image: url(../image/main_bg.png);  padding: 70px 0 70px 140px;}
+.index_04 h4{margin-bottom: 10px;}
+.index_04 button{width: 190px; height:47px; border-radius: 22px; background: #fff; text-align: left; position: relative; margin-right: 5px}
+.index_04 button img{margin: 5px;}
+.index_04 button span{font-size:24px; color:#aac90c; font-weight:bold; padding: 0 0 20px 0; position: absolute; top:10px}
+
+
+/*popup*/
+#modal_content_back{background:#000; width: 100%; height: 100%; position: fixed; z-index: 100; top: 0; opacity: 0.5;}
+#modal_content{width: 800px;  background: #fff; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 50px 0 0 0; text-align: center; z-index: 200;}
+#modal_content p{font-size:18px; color: #888; margin-bottom: 30px;}
+#modal_content label{font-size:25px; color: #888; margin-right: 20px;}
+#modal_content input{width: 400px; padding: 20px; border: 1px solid #ccc; color: #ccc; margin: 10px 0; font-size: 20px}
+#modal_content .submit{width: 100%; background: #aac90c; font-size: 30px; color: #fff; margin:30px 0 0 0; }
+#modal_content .submit:hover{cursor:pointer; background: #6c8102;}
+#modal_content img{ position: absolute;right: 15px; top: 15px;}
+#modal_content img:hover{opacity: 50%;cursor:pointer;}
+.display_on{display: none;}
+
+.banner2{text-align: center; padding: 70px 0;}
+.banner2 h2{margin-top: 20px;}
+
+.sub_01_bg{background: #aac90c; padding: 80px 0;}
+.sub_01{width: 840px; margin: 0 auto;}
+.sub_01 li{width:400px; float: left; text-align: center;}
+.sub_01 li:first-child{margin-right:40px }
+.sub_01 li div{width:400px; height: 400px; background: #fff; box-shadow: 10px 20px 30px 1px #99b500;}
+.sub_01 li div img{padding: 80px 0;}
+.sub_01 li h5{margin:20px; color: #fff; font-size: 20px;}
+.sub_01 li a button{text-align: center; background: #fff; color: #aac90c; font-size:20px; font-weight:700; padding: 15px 30px; border-radius: 50px;}
+
+.banner3{background: #f6fae5; text-align: center;}
+.banner2 h5{margin-top: 10px;}
+.d{padding: 50px 0;}
+
+.detail h1{margin:100px 0 5px;}
+.detail h5{margin:5px 0 10px;}
+.detail img{margin:20px 0; text-align: center;}
+
+.detail_03_a{margin: 50px 0;}
+
+.detail_03_d h3{margin:100px 0 20px;}
+.detail_03_d h5{margin-bottom:10px}
+.detail_03_d img{margin-bottom: 70px;}
+
+.detail .middle {text-align: center;}
+
+
+
+

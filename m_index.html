@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script> 
+    <link rel="stylesheet" href="css/m_style.css">
+    <link rel = "preconnect"href = "https://fonts.googleapis.com">
+    <link rel = "preconnect"href = "https://fonts.gstatic.com"crossorigin>
+    <link href = "https : //fonts.googleapis.com/css2? family = Roboto : wght @ 100 & display = swap "rel ="stylesheet ">
+    <title>PrintGuard</title>
+</head>
+<script type="text/javascript"> 
+jQuery(function() {
+		jQuery( "#button" ).toggle(
+			function() {
+				jQuery( "#effect" ).animate({right: 0}, 500 );
+                jQuery( "#button" ).css({"background":"url(image/hamberger2.png)"});
+				
+			},
+			function() {
+				jQuery( "#effect" ).animate({right: '-100%'}, 500 );
+				jQuery( "#button" ).css({"background":"url(image/hamberger.png)"});
+			}
+		);
+	});
+</script> 
+<body>
+   
+    <header>
+       <!--GNB-->
+        <div class="gnb clear-fix wrap">
+            <a class="logo" href="m_index.html">
+               <img src="image/logo.png" width="100px">
+            </a>
+            <span id="button" class="aa"></span>
+            <div id="effect">
+                <ul id="content" class="gnb_menu" id="effect">
+                    <li></li><li></li>
+                    <li><a href="m_sub1.html">회사소개</a></li>
+                    <li><a href="m_sub2.html">제품소개</a></li>
+                    <li><a href="#" class="open">상담신청</a></li>
+                    <li><a href="https://blog.naver.com/mwstory1111" target="_blank">블로그</a></li>
+                    <li><a href="http://officeguard.net" target="_blank">스마트스토어</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <!--배너-->
+    </header>
+    
+    <div class="banner">
+        <ul>
+            <li>
+                <img src="image/sub2_top.png" alt="" width="300px">
+            </li>
+            <li>
+                <h2>강력한 출력물 보안 솔루션</h2>
+                <h5>모든 오피스 환경에 적용가능한<br> 강력한 출력 보안 서비스</h5>
+            </li>
+            <li>
+                <a class="btn_hover open">
+                    <button>
+                        <img src="image/icon01.png" alt="헤드셋 상담">
+                        <span>상담신청하기</span>
+                    </button>
+                </a>
+            </li>
+            <li>
+                <a class="btn_hover" href="m_sub2.html">
+                    <button>
+                        <img src="image/icon02.png" alt="infomation">
+                        <span>제품상세보기</span>
+                    </button>
+                </a>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="index_02">
+        <ul>
+            <li><img src="image/main_printer.png" alt=""></li>
+            <li><h1>이런 분들께 추천드립니다 !!</h1></li>
+            <li><h5>회사 내에서 인쇄한 모든 출력물을<br>한 눈에 확인하고 싶다 !</h5></li>
+            <li><h5>회사 내에 어떤 컴퓨터에서 어떤<br>인쇄물을 출력했는지 알고 싶다 !</h5></li>
+            <li><h5>회사 부서별 또는 개인별로 인쇄물<br>출력에 관해 다른 권한을 부여하고 싶다 !</h5></li>
+            <li><h5>회사 문서외에 사적/개인적 인쇄물<br>출력을 통제하고 싶다 !</h5></li>
+            <li><h5>회사 출력물에  자동으로 인쇄물<br>정보 및 회사 워터마크 등을 삽입하고 싶다 !</h5></li>
+        </ul>
+    </div>
+     
+    <div class="index_03 wrap">
+        <h1>프로그램 설치 하나로 <br> 사내 모든 컴퓨터 출력시스템을<br> 관리 할 수 있습니다 !</h1>
+        <h5>특정출력물 제한, 워터마크 및 사용자 정보삽입,<br>출력물 자동저장, 프린터 사용내역 조회 등<br>다양한 기능을 관리자 권한으로 부여할 수 있습니다.</h5>
+        <img src="/image/main_banner_01.png" alt="관리자 컴퓨터에서 사용자A,B,C,D,E,F 에게 각자 권한을 부여하는 그림" width="90%">
+    </div>
+     
+    <div class="index_04">
+        <div class="wrap">
+            <h4 class="white">그밖에 다양한 기능들을 <br>별도의 추가 비용 없이<br>사용하실 수 있습니다.</h4>
+            <br>
+            <a class="btn_hover open">
+                <button>
+                    <img src="/image/icon01_1.png" alt="헤드셋 상담">
+                    <span>상담신청하기</span>
+                </button>
+            </a>
+            <br>
+            <a class="btn_hover" href="m_sub2.html">
+                <button>
+                    <img src="/image/icon02_1.png" alt="infomation">
+                    <span>제품상세보기</span>
+                </button>
+            </a>
+        </div>
+    </div>
+    <div id="modal_content_back" class="display_on"></div>
+        <div id="modal_content" class="display_on">
+            <img src="/image/close.png" alt="X" id="m_close">
+            <p>프린트가드 상품의 가격 및 제품 상세정보 안내를 원하시는경우<br>
+            하단 정보를 입력하신 후 [상담신청하기]를 누르시면 신청이 완료됩니다.<br>
+            상담은 순차적으로 진행됩니다. 감사합니다.</p>
+            <label>업체명</label><input type="text"><br>
+            <label>담당자</label><input type="text"><br>
+            <label>이메일</label><input type="text"><br>
+            <label>연락처</label><input type="text"><br>
+            <div class="submit">상담신청하기</div>
+        </div>
+   
+    
+    <footer>
+    <p>(주)엠더블유스토리<br>
+    ㅣ 우 02841 서울시 성북구 안암로 145, 산학관 203-3호 (안암동 5가, 고려대학교 자연계캠퍼스) <br>
+    ㅣ 사업자등록번호 209-81-41489 ㅣ 통신판매업 2005-00592 ㅣ security@mwstory.com <br>
+    Copyright 2021. MWstory All rights reserved.</p>
+    </footer> 
+</body>
+<!--
+<script type="text/javascript"> 
+jQuery(function() {
+		jQuery( "#hamberger" ).toggle(
+			function() {
+				jQuery( ".gnb_menu" ).animate({left: 0}, 500 );
+			},
+			function() {
+				jQuery( ".gnb_menu" ).animate({left: '-200px'}, 500 );
+			}
+		);
+	});
+</script>-->
+<script>
+    $(document).ready(function(){
+			$(".open").click(function(){
+				$("#modal_content").removeClass('display_on');
+                $("#modal_content_back").removeClass('display_on');
+			});
+			$("#m_close").click(function(){
+				$("#modal_content").addClass('display_on');
+                $("#modal_content_back").addClass('display_on');
+			});
+        
+            $("#hamberger").click(function(){
+				$(".gnb_menu").animate({left: 0}, 500 );
+			});
+            $("#hamberger_close").click(function(){
+				$(".gnb_menu").animate({left: '-200px'}, 500 );
+			});
+		});
+</script>
+</html>
