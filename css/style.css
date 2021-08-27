@@ -30,20 +30,19 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
-}
+
 /*all*/
 *, body, ul, li, a, button, h1, h2, h3, h4, h5, p{margin: 0;padding: 0; list-style-type: none; font-style: none; text-decoration: none;border-style: none; font-weight: normal; font-family: 'Noto Sans KR', sans-serif;}
 .clear-fix::after{content:""; clear: both; display:block;}
 .wrap{width: 1060px; margin: 0 auto;}
 
 /*font*/
-h1{font-size:30px; color:#aac90c; font-weight: bold; letter-spacing: -0.05em;}
-h2{font-size:30px; color:#8f8f8f; font-weight: bold; letter-spacing: -0.05em;}
-h3{font-size:25px; color:#000000; font-weight: bold; letter-spacing: -0.05em;}
-h4{font-size:30px; color:#ffffff; font-weight: bold; letter-spacing: -0.05em;}
-h5{font-size:20px; color:#8f8f8f; letter-spacing: -0.05em;}
+h1{font-size:30px; color:#aac90c; font-weight: bold; letter-spacing: -0.05em; line-height:32px; margin: 5px 0 5px;}
+h2{font-size:30px; color:#8f8f8f; font-weight: bold; letter-spacing: -0.05em; line-height:32px; margin: 5px 0 5px;}
+h3{font-size:25px; color:#000000; font-weight: bold; letter-spacing: -0.05em; line-height:27px; margin: 5px 0 5px;}
+h4{font-size:30px; color:#ffffff; font-weight: bold; letter-spacing: -0.05em; line-height:32px; margin: 5px 0 5px;}
+h5{font-size:20px; color:#8f8f8f; letter-spacing: -0.05em; line-height:23px;}
+a, p{letter-spacing: -0.05em;}
 
 /*header*/
 .gnb{height: 70px;}
@@ -58,11 +57,11 @@ footer{font-size:15px; color: #aaa; text-align: center; padding: 80px 0 30px;}
 .banner{margin-bottom: 100px;}
 .banner li{float: left; margin:72px 0 0 150px;}
 .banner li:nth-child(2){margin:100px 0 0 40px;}
-.banner li h2{margin: 10px 0 3px; }
+.banner li h2{margin: 10px 0 10px; }
 .banner li h5{margin: 0 0 15px 0; }
 .banner li button{width: 190px; height:47px; border-radius: 22px; background: #aac90c; text-align: left; position: relative; margin-right: 5px}
 .banner li button img{margin: 5px;}
-.banner li button span{font-size:24px; color:#fff; font-weight:bold; padding: 0 0 20px 0; position: absolute; top:10px}
+.banner li button span{font-size:24px; color:#fff; font-weight:bold; padding: 0 0 20px 0; position: absolute; top:5px; letter-spacing: -0.05em;}
 
 .index{background: #f6fae5;}
 .index_02{padding: 80px 0;}
@@ -77,7 +76,7 @@ footer{font-size:15px; color: #aaa; text-align: center; padding: 80px 0 30px;}
 .index_04 h4{margin-bottom: 10px;}
 .index_04 button{width: 190px; height:47px; border-radius: 22px; background: #fff; text-align: left; position: relative; margin-right: 5px}
 .index_04 button img{margin: 5px;}
-.index_04 button span{font-size:24px; color:#aac90c; font-weight:bold; padding: 0 0 20px 0; position: absolute; top:10px}
+.index_04 button span{font-size:24px; color:#aac90c; font-weight:bold; padding: 0 0 20px 0; position: absolute; top:5px; letter-spacing: -0.05em;}
 
 
 /*popup*/
