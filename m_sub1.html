@@ -76,16 +76,8 @@ jQuery(function() {
     <div id="modal_content_back" class="display_on">
     </div>
     
-    <div id="modal_content" class="display_on">
-        <img src="/image/close.png" alt="X" id="m_close">
-        <p>프린트가드 상품의 가격 및 제품 상세정보 안내를 원하시는경우<br>
-        하단 정보를 입력하신 후 [상담신청하기]를 누르시면 신청이 완료됩니다.<br>
-        상담은 순차적으로 진행됩니다. 감사합니다.</p>
-        <label>업체명</label><input type="text"><br>
-        <label>담당자</label><input type="text"><br>
-        <label>이메일</label><input type="text"><br>
-        <label>연락처</label><input type="text"><br>
-        <div class="submit">상담신청하기</div>
+    <div id="modal_base_ground">
+        
     </div>
    
     
@@ -97,6 +89,7 @@ jQuery(function() {
     </footer> 
     
 </body>
+<script src="js/commons.js"></script>
 <!--
 <script type="text/javascript"> 
 jQuery(function() {
@@ -112,21 +105,13 @@ jQuery(function() {
 </script>-->
 <script>
     $(document).ready(function(){
-			$(".open").click(function(){
-				$("#modal_content").removeClass('display_on');
-                $("#modal_content_back").removeClass('display_on');
-			});
-			$("#m_close").click(function(){
-				$("#modal_content").addClass('display_on');
-                $("#modal_content_back").addClass('display_on');
-			});
         
-            $("#hamberger").click(function(){
-				$(".gnb_menu").animate({left: 0}, 500 );
-			});
-            $("#hamberger_close").click(function(){
-				$(".gnb_menu").animate({left: '-200px'}, 500 );
-			});
-		});
+        $("#hamberger").click(function(){
+            $(".gnb_menu").animate({left: 0}, 500 );
+        });
+        $("#hamberger_close").click(function(){
+            $(".gnb_menu").animate({left: '-200px'}, 500 );
+        });
+    });
 </script>
 </html>

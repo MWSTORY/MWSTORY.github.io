@@ -52,37 +52,16 @@
     </ul>
     </div>
     
-     <div id="modal_content_back" class="display_on"></div>
-        <div id="modal_content" class="display_on">
-            <img src="/image/close.png" alt="X" id="m_close">
-            <p>프린트가드 상품의 가격 및 제품 상세정보 안내를 원하시는경우<br>
-            하단 정보를 입력하신 후 [상담신청하기]를 누르시면 신청이 완료됩니다.<br>
-            상담은 순차적으로 진행됩니다. 감사합니다.</p>
-            <label>업체명</label><input type="text"><br>
-            <label>담당자</label><input type="text"><br>
-            <label>이메일</label><input type="text"><br>
-            <label>연락처</label><input type="text"><br>
-
-            <input class="submit" type="submit" value="상담신청하기">
-        </div>
+    <div id="modal_base_ground">
+        
+    </div>
     <!--본문-->
     
     <footer>
     <p>(주)엠더블유스토리 ㅣ 우 02841 서울시 성북구 안암로 145, 산학관 203-3호 (안암동 5가, 고려대학교 자연계캠퍼스) <br>
-    ㅣ 사업자등록번호 209-81-41489 ㅣ 통신판매업 2005-00592 ㅣ security@mwstory.com <br>
-    Copyright 2021. MWstory All rights reserved.</p>
+        ㅣ 사업자등록번호 209-81-41489 ㅣ 통신판매업 2005-00592 ㅣ security@mwstory.com <br>
+        Copyright 2021. MWstory All rights reserved.</p>
     </footer>    
 </body>
-<script>
-    $(document).ready(function(){
-			$(".open").click(function(){
-				$("#modal_content").removeClass('display_on');
-                $("#modal_content_back").removeClass('display_on');
-			});
-			$("#m_close").click(function(){
-				$("#modal_content").addClass('display_on');
-                $("#modal_content_back").addClass('display_on');
-			});
-		});
-</script>
+<script src="js/commons.js"></script>
 </html>
