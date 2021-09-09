@@ -1,6 +1,7 @@
 $(function(){
     includeHTML("consultation_form.html", "#modal_base_ground");
 })
+// 외부 페이지 불러오기
 function includeHTML(fn, target) {
     let element = document.querySelector(target);
     xhttp = new XMLHttpRequest();
@@ -13,6 +14,7 @@ function includeHTML(fn, target) {
     xhttp.send();
 }
 
+// 페이지 불러온 후 작동되는 이벤트
 function componentDidMount(){
     $(".open").attr('onclick','').unbind("click");
     $(".open").click(function(){
@@ -26,26 +28,28 @@ function componentDidMount(){
     });
 }
 
+// 이메일 유효 체크
 function email_checker(data){
     if(data.match(/[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*\.[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*/g) != undefined) return true;
     return false;
 }
 
+// 전화번호 유효 체크
 function tel_checker(data){
     let res = data.match(/^[0-9](-?[0-9]){1,}$/g);
-    console.log(res)
     if(res != undefined) return true;
     return false;
 }
-//security@mwstory.com
+
+// 상담 메일 전송
 function apply_consultation_inquiry(){
+    // 페이지 이동 방지
     // let form = document.querySelector("#gmail_sender");
     let company = document.querySelector('#company').value;
     let manager = document.querySelector('#manager').value;
     let email = document.querySelector('#email').value;
     let tel = document.querySelector('#tel').value;
     let message = document.querySelector('#message').value;
-    console.log(email_checker(email), tel_checker(tel))
     if(email_checker(email) && tel_checker(tel)){
         var formData = new FormData();
         formData.append('company', company);
@@ -54,9 +58,11 @@ function apply_consultation_inquiry(){
         formData.append('tel', tel);
         formData.append('message', message);
 
-        // form.action = "https://script.google.com/macros/s/AKfycbzLWzwVIKhcDRRHoruWZMK2t-dFu_M-rtss_gfParPrJID3aK11ikxI04OBPrOFkAU2/exec";
+        // form.action = "https://script.google.com/macros/s/AKfycbwwlzPDgI5WoEmV_I7hURrZNHCMB2oqEr8rLjpIf0RcyGQhXywtbCcnHW4xrbL7VI5V/exec";
         // form.submit();
-        // console.log(form);
+
+        // javascript 프론트엔드로 메일 처리
+        // 구글 드라이브 연동해서 메일 전송함
         fetch("https://script.google.com/macros/s/AKfycbwwlzPDgI5WoEmV_I7hURrZNHCMB2oqEr8rLjpIf0RcyGQhXywtbCcnHW4xrbL7VI5V/exec", {
             method:'POST',
             headers:{
