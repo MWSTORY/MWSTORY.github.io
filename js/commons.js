@@ -32,38 +32,41 @@ function email_checker(data){
 }
 
 function tel_checker(data){
-    if(data.match(/([0-9]*-?[0-9]){1,}/g) != undefined) return true;
+    let res = data.match(/^[0-9](-?[0-9]){1,}$/g);
+    console.log(res)
+    if(res != undefined) return true;
     return false;
 }
-
+//security@mwstory.com
 function apply_consultation_inquiry(){
     // let form = document.querySelector("#gmail_sender");
     let company = document.querySelector('#company').value;
     let manager = document.querySelector('#manager').value;
     let email = document.querySelector('#email').value;
     let tel = document.querySelector('#tel').value;
-    let massage = document.querySelector('#message').value;
-    
-    console.log(company, manager, email, tel, massage);
+    let message = document.querySelector('#message').value;
+    console.log(email_checker(email), tel_checker(tel))
     if(email_checker(email) && tel_checker(tel)){
-        let form = {
-            company,
-            manager,
-            email,
-            tel,
-            massage
-        }
+        var formData = new FormData();
+        formData.append('company', company);
+        formData.append('manager', manager);
+        formData.append('email', email);
+        formData.append('tel', tel);
+        formData.append('message', message);
+
         // form.action = "https://script.google.com/macros/s/AKfycbzLWzwVIKhcDRRHoruWZMK2t-dFu_M-rtss_gfParPrJID3aK11ikxI04OBPrOFkAU2/exec";
         // form.submit();
         // console.log(form);
-        fetch("https://script.google.com/macros/s/AKfycbzLWzwVIKhcDRRHoruWZMK2t-dFu_M-rtss_gfParPrJID3aK11ikxI04OBPrOFkAU2/exec", {
+        fetch("https://script.google.com/macros/s/AKfycbwwlzPDgI5WoEmV_I7hURrZNHCMB2oqEr8rLjpIf0RcyGQhXywtbCcnHW4xrbL7VI5V/exec", {
             method:'POST',
             headers:{
                 'Content-Type': 'application/json'
             },
-            body:JSON.stringify(form)
+            body:formData,
+            mode: 'no-cors'
         }).then(res => {
-            console.log(res);
+            alert("상담 문의가 접수되었습니다")
+            location.reload();
         })
     }else{
         alert("이메일 또는 전화번호를 정확히 입력해주세요.")
