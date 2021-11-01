@@ -119,6 +119,34 @@ footer{font-size:15px; color: #aaa; text-align: center; padding: 80px 0 30px;}
 
 .detail .middle {text-align: center;}
 
+@media all and (min-width:400px) and (max-width:1060px){
+    .wrap{width:100%;}
+    .gnb a img{margin-left: 20px;}
+    .gnb ul{margin-right: 20px;  }
+    .banner{margin-bottom: 100px; margin-top: 100px;}
+    .banner li{float: none; margin:0 0 0 0; text-align: center;}
+    .banner li:nth-child(2){margin:0 0 0 0;}
 
+    .index_02 ul{float: none;}
+    .index_02 ul li{text-align: center;}
+    .index_02 ul img{padding: 0 0 0 0;}
+
+    .index_03{margin: 100px 0; text-align: center;  padding-left: 0px;}
+    .index_03 img{width:80%; margin: 30px 0;}
+    footer{font-size:12px; color: #aaa; text-align: center; padding: 80px 50px 30px;}
+
+    .detail{text-align: center; width: 80%; margin: 0 auto;}
+    .detail h1{margin:100px 0 5px;}
+    .detail h5{margin:5px 0 10px;}
+    .detail img{margin:20px 0; text-align: center; width: 100%;}
+
+    .detail_03_a{margin: 50px 0;}
+
+    .detail_03_d h3{margin:100px 0 20px;}
+    .detail_03_d h5{margin-bottom:10px}
+    .detail_03_d img{margin-bottom: 70px;}
+
+    .detail .middle {text-align: center;}
+}
 
 
