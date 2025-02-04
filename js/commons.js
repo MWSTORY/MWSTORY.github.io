@@ -63,17 +63,27 @@ function apply_consultation_inquiry(){
 
         // javascript 프론트엔드로 메일 처리
         // 구글 드라이브 연동해서 메일 전송함
-        fetch("https://script.google.com/macros/s/AKfycbwwlzPDgI5WoEmV_I7hURrZNHCMB2oqEr8rLjpIf0RcyGQhXywtbCcnHW4xrbL7VI5V/exec", {
-            method:'POST',
-            headers:{
-                'Content-Type': 'application/json'
-            },
-            body:formData,
+        fetch(`https://script.google.com/macros/s/AKfycbyyStJIsi57b0betKhZPI5dvgb4dJ0rTHLkiaXiK3YrC7NekIUkdYAE-ZnicDD9q7K_gQ/exec?company=${company}&manager=${manager}&email=${email}&tel=${tel}&message=${message}`, {
+            method:'GET',
             mode: 'no-cors'
         }).then(res => {
-            alert("상담 문의가 접수되었습니다")
+            alert("접수되었습니다")
             location.reload();
-        })
+        }).catch(error => {
+            console.error("Error:", error);
+            alert("오류가 발생했습니다. 다시 시도해주세요.");
+        });
+        // fetch("https://script.google.com/macros/s/AKfycbwwlzPDgI5WoEmV_I7hURrZNHCMB2oqEr8rLjpIf0RcyGQhXywtbCcnHW4xrbL7VI5V/exec", {
+        //     method:'POST',
+        //     headers:{
+        //         'Content-Type': 'application/json'
+        //     },
+        //     body:formData,
+        //     mode: 'no-cors'
+        // }).then(res => {
+        //     alert("상담 문의가 접수되었습니다")
+        //     location.reload();
+        // })
     }else{
         alert("이메일 또는 전화번호를 정확히 입력해주세요.")
     }
